@@ -3,34 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Переход в Telegram</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            font-family: Arial, sans-serif;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #0088cc;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #005f8a;
+            transform: scale(1.05);
+        }
+        .button:active {
+            transform: scale(0.95);
+        }
+        @media (max-width: 600px) {
+            .button {
+                font-size: 16px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="menu-toggle">☰</div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="portfolio.html#about">Обо мне</a></li>
-                <li><a href="portfolio.html#projects">Проекты</a></li>
-                <li><a href="portfolio.html#contacts">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Привет, я Ярослав!</h1>
-            <p>Я веб-разработчик, создаю крутые проекты и воплощаю идеи в жизнь.</p>
-            <a href="portfolio.html" class="btn">Узнать больше</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Ярослав. Все права защищены.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <a href="https://t.me/vneshistok/2?single" class="button">Перейти в Telegram</a>
 </body>
 </html>
